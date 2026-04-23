@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Affordable Roof – Alabama | Roofing You Can Trust</title>
+  <meta name="description" content="Premium roofing services in Alabama. Licensed, insured, and guaranteed. No deposits required. Free inspections available.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --navy: #0a1628;
+      --navy-light: #132240;
+      --charcoal: #1a1a2e;
+      --gold: #c9a962;
+      --gold-dark: #b8944d;
+      --gold-light: #d4b978;
+      --white: #ffffff;
+      --gray-50: #f8f9fa;
+      --gray-100: #f1f3f5;
+      --gray-200: #e9ecef;
+      --gray-300: #dee2e6;
+      --gray-400: #ced4da;
+      --gray-500: #adb5bd;
+      --gray-600: #6c757d;
+      --gray-700: #495057;
+      --gray-800: #343a40;
+      --gray-900: #212529;
+      --text-dark: #2d3748;
+      --success: #22c55e;
+      --error: #ef4444;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--gray-800);
+      line-height: 1.6;
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== STICKY HEADER ===== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--navy);
+      transition: all 0.3s ease;
+      padding: 16px 0;
+    }
+
+    .header.scrolled {
+      background: rgba(10, 22, 40, 0.98);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+      padding: 12px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy);
+      font-size: 20px;
+    }
+
+    .logo-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: var(--gray-300);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .header-phone {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--white);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .header-phone i {
+      color: var(--gold);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      color: var(--navy);
+      box-shadow: 0 4px 15px rgba(201, 169, 98, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(201, 169, 98, 0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--gold);
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-large {
+      padding: 16px 32px;
+      font-size: 1rem;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      background: none;
+      border: none;
+    }
+
+    .hamburger span {
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      transition: all 0.3s;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      min-height: 100vh;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 80%, rgba(201, 169, 98, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(201, 169, 98, 0.05) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    .hero-bg-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30L30 0z' fill='%23ffffff' fill-opacity='1'/%3E%3C/svg%3E");
+      background-size: 60px 60px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201, 169, 98, 0.15);
+      border: 1px solid rgba(201, 169, 98, 0.3);
+      padding: 8px 20px;
+      border-radius: 50px;
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 3.8rem);
+      color: var(--white);
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .hero h1 .gold {
+      color: var(--gold);
+    }
+
+    .hero-subheadline {
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      color: var(--gray-300);
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 48px;
+    }
+
+    .hero-phone {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: var(--white);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .hero-phone i {
+      color: var(--gold);
+      font-size: 1.4rem;
+    }
+
+    .trust-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--gray-300);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .trust-badge-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(34, 197, 94, 0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--success);
+      font-size: 1rem;
+    }
+
+    /* ===== SECTIONS COMMON ===== */
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      color: var(--navy);
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--gray-600);
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 56px;
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== TRUST REBUILD SECTION ===== */
+    .trust-section {
+      background: var(--gray-50);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+
+    .trust-card {
+      background: var(--white);
+      padding: 32px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transition: all 0.3s ease;
+      border: 1px solid var(--gray-100);
+    }
+
+    .trust-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    }
+
+    .trust-card-icon {
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: var(--gold);
+      font-size: 1.5rem;
+    }
+
+    .trust-card h3 {
+      font-size: 1.2rem;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .trust-card p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+
+    .trust-promises {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .trust-promise {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      padding: 28px 32px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--white);
+    }
+
+    .trust-promise i {
+      font-size: 1.8rem;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .trust-promise h4 {
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .trust-promise p {
+      font-size: 0.9rem;
+      color: var(--gray-400);
+    }
+
+    /* ===== SERVICES SECTION ===== */
+    .services-section {
+      background: var(--navy);
+    }
+
+    .services-section .section-title {
+      color: var(--white);
+    }
+
+    .services-section .section-subtitle {
+      color: var(--gray-400);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .service-card {
+      background: var(--charcoal);
+      border-radius: 16px;
+      padding: 36px 28px;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold) 0%, var(--gold-dark) 100%);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(201, 169, 98, 0.3);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: rgba(201, 169, 98, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      color: var(--gold);
+      font-size: 1.4rem;
+    }
+
+    .service-card h3 {
+      color: var(--white);
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--gray-400);
+      font-size: 0.95rem;
+    }
+
+    /* ===== WHY CHOOSE US ===== */
+    .why-section {
+      background: var(--white);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .why-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 24px;
+      border-radius: 12px;
+      background: var(--gray-50);
+      transition: all 0.3s ease;
+    }
+
+    .why-card:hover {
+      background: var(--gray-100);
+      transform: translateX(4px);
+    }
+
+    .why-card-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .why-card h4 {
+      color: var(--navy);
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .why-card p {
+      color: var(--gray-600);
+      font-size: 0.9rem;
+    }
+
+    /* ===== SOCIAL PROOF ===== */
+    .social-section {
+      background: var(--gray-50);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border: 1px solid var(--gray-100);
+    }
+
+    .testimonial-stars {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 16px;
+    }
+
+    .testimonial-stars i {
+      color: var(--gold);
+      font-size: 1rem;
+    }
+
+    .testimonial-quote {
+      font-size: 1.05rem;
+      color: var(--gray-700);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      color: var(--navy);
+      font-size: 0.95rem;
+    }
+
+    .testimonial-location {
+      font-size: 0.85rem;
+      color: var(--gray-500);
+    }
+
+    .social-disclaimer {
+      text-align: center;
+      padding: 24px;
+      background: rgba(201, 169, 98, 0.08);
+      border-radius: 12px;
+      border: 1px solid rgba(201, 169, 98, 0.2);
+    }
+
+    .social-disclaimer p {
+      color: var(--gray-700);
+      font-size: 0.95rem;
+    }
+
+    .social-disclaimer i {
+      color: var(--gold);
+      margin-right: 8px;
+    }
+
+    /* ===== PROCESS SECTION ===== */
+    .process-section {
+      background: var(--navy);
+    }
+
+    .process-section .section-title {
+      color: var(--white);
+    }
+
+    .process-section .section-subtitle {
+      color: var(--gray-400);
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 44px;
+      left: 10%;
+      right: 10%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold) 0%, var(--gold-dark) 100%);
+      z-index: 0;
+      border-radius: 2px;
+    }
+
+    .process-step {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .process-step-number {
+      width: 88px;
+      height: 88px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--navy);
+      box-shadow: 0 8px 30px rgba(201, 169, 98, 0.3);
+    }
+
+    .process-step h4 {
+      color: var(--white);
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+
+    .process-step p {
+      color: var(--gray-400);
+      font-size: 0.9rem;
+    }
+
+    /* ===== GUARANTEE SECTION ===== */
+    .guarantee-section {
+      background: linear-gradient(135deg, rgba(201, 169, 98, 0.08) 0%, rgba(201, 169, 98, 0.03) 100%);
+    }
+
+    .guarantee-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .guarantee-card {
+      background: var(--white);
+      padding: 36px 28px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .guarantee-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+    }
+
+    .guarantee-icon {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: var(--gold);
+      font-size: 1.8rem;
+    }
+
+    .guarantee-card h3 {
+      color: var(--navy);
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .guarantee-card p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+
+    /* ===== BEFORE/AFTER ===== */
+    .beforeafter-section {
+      background: var(--white);
+    }
+
+    .beforeafter-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .beforeafter-slider {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+    }
+
+    .beforeafter-images {
+      position: relative;
+      height: 450px;
+      background: linear-gradient(135deg, var(--charcoal) 0%, var(--navy) 100%);
+    }
+
+    .beforeafter-image {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray-500);
+      font-size: 1rem;
+    }
+
+    .beforeafter-image.before {
+      background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%);
+      clip-path: inset(0 50% 0 0);
+    }
+
+    .beforeafter-image.after {
+      background: linear-gradient(135deg, #1a3a2a 0%, #0a2a1a 100%);
+    }
+
+    .beforeafter-image span {
+      background: rgba(0,0,0,0.6);
+      padding: 8px 20px;
+      border-radius: 6px;
+      color: var(--white);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .beforeafter-image.before span {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .beforeafter-image.after span {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .beforeafter-divider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 4px;
+      background: var(--gold);
+      transform: translateX(-50%);
+      cursor: ew-resize;
+      z-index: 10;
+    }
+
+    .beforeafter-divider::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      background: var(--gold);
+      border-radius: 50%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .beforeafter-divider::after {
+      content: '\f0b2';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--navy);
+      font-size: 1.1rem;
+    }
+
+    .beforeafter-input {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: ew-resize;
+      z-index: 20;
+    }
+
+    /* ===== FAQ ===== */
+    .faq-section {
+      background: var(--gray-50);
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border-radius: 12px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      border: 1px solid var(--gray-100);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 20px 24px;
+      background: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .faq-question:hover {
+      background: var(--gray-50);
+    }
+
+    .faq-question i {
+      color: var(--gold);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .faq-question i {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-answer-inner {
+      padding: 0 24px 20px;
+      color: var(--gray-600);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+
+    /* ===== CTA SECTION ===== */
+    .cta-section {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(201, 169, 98, 0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .cta-text h2 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .cta-text p {
+      color: var(--gray-400);
+      font-size: 1.05rem;
+      margin-bottom: 28px;
+    }
+
+    .cta-phone {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .cta-phone i {
+      font-size: 1.5rem;
+    }
+
+    .cta-form {
+      background: var(--white);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .cta-form h3 {
+      font-size: 1.4rem;
+      color: var(--navy);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--gray-700);
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 2px solid var(--gray-200);
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.2s;
+      background: var(--white);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .form-submit {
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--charcoal);
+      padding: 64px 0 32px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand .logo {
+      margin-bottom: 16px;
+    }
+
+    .footer-brand p {
+      color: var(--gray-500);
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    .footer-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.05);
+      padding: 8px 16px;
+      border-radius: 6px;
+      color: var(--gray-400);
+      font-size: 0.85rem;
+    }
+
+    .footer-badge i {
+      color: var(--gold);
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 12px;
+    }
+
+    .footer-col a {
+      color: var(--gray-500);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--gold);
+    }
+
+    .footer-col p {
+      color: var(--gray-500);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-col p i {
+      color: var(--gold);
+      width: 16px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 32px;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      color: var(--gray-600);
+      font-size: 0.85rem;
+    }
+
+    /* ===== FLOATING CTA ===== */
+    .floating-cta {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .floating-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .floating-btn.phone {
+      background: linear-gradient(135deg, var(--success) 0%, #16a34a 100%);
+    }
+
+    .floating-btn.phone:hover {
+      transform: scale(1.1);
+    }
+
+    /* ===== MOBILE MENU ===== */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--navy);
+      z-index: 998;
+      padding: 100px 24px 40px;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .mobile-menu.active {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .mobile-menu .btn {
+      margin-top: 16px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+
+      .process-steps::before {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links,
+      .header-phone,
+      .nav .btn {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-promises {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .guarantee-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+
+      .hero-ctas {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .trust-badges {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section {
+        padding: 72px 0;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .beforeafter-images {
+        height: 300px;
+      }
+
+      .cta-form {
+        padding: 28px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-house-chimney"></i>
+          </div>
+          <div class="logo-text">
+            My Affordable Roof
+            <span>Alabama</span>
+          </div>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="header-cta">
+            <a href="tel:+19188923358" class="header-phone">
+              <i class="fas fa-phone"></i>
+              +1 (918) 892-3358
+            </a>
+            <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+          </div>
+        </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="closeMobileMenu()">Home</a>
+    <a href="#services" onclick="closeMobileMenu()">Services</a>
+    <a href="#why-us" onclick="closeMobileMenu()">Why Us</a>
+    <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+    <a href="tel:+19188923358" style="color: var(--gold);">
+      <i class="fas fa-phone"></i> Call Now: +1 (918) 892-3358
+    </a>
+    <a href="#contact" class="btn btn-primary" onclick="closeMobileMenu()">Get Free Estimate</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-pattern"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-shield-halved"></i>
+          Trusted by Alabama Homeowners Since 2010
+        </div>
+        <h1>Roofing You Can <span class="gold">Finally Trust</span> in Alabama</h1>
+        <p class="hero-subheadline">Affordable. Reliable. Done Right the First Time.</p>
+
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-large">
+            <i class="fas fa-clipboard-check"></i>
+            Get Free Roof Inspection
+          </a>
+          <a href="tel:+19188923358" class="btn btn-outline btn-large">
+            <i class="fas fa-phone"></i>
+            Call Now
+          </a>
+        </div>
+
+        <div class="hero-phone">
+          <i class="fas fa-phone"></i>
+          +1 (918) 892-3358
+        </div>
+
+        <div class="trust-badges">
+          <div class="trust-badge">
+            <div class="trust-badge-icon"><i class="fas fa-certificate"></i></div>
+            Licensed & Insured
+          </div>
+          <div class="trust-badge">
+            <div class="trust-badge-icon"><i class="fas fa-star"></i></div>
+            Satisfaction Guarantee
+          </div>
+          <div class="trust-badge">
+            <div class="trust-badge-icon"><i class="fas fa-bolt"></i></div>
+            Fast Turnaround
+          </div>
+          <div class="trust-badge">
+            <div class="trust-badge-icon"><i class="fas fa-handshake"></i></div>
+            No Deposit Required
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST REBUILD -->
+  <section class="section trust-section" id="trust">
+    <div class="container">
+      <h2 class="section-title fade-in">A New Standard of <span class="gold-gradient-text">Roofing Service</span></h2>
+      <p class="section-subtitle fade-in">We've rebuilt our processes from the ground up to deliver the experience you deserve.</p>
+
+      <div class="trust-grid">
+        <div class="trust-card fade-in">
+          <div class="trust-card-icon"><i class="fas fa-gears"></i></div>
+          <h3>New Processes</h3>
+          <p>Every project now follows strict quality protocols with multiple inspection points throughout the installation.</p>
+        </div>
+        <div class="trust-card fade-in">
+          <div class="trust-card-icon"><i class="fas fa-comments"></i></div>
+          <h3>Improved Communication</h3>
+          <p>You'll always know the status of your project. We provide real-time updates and direct access to your crew lead.</p>
+        </div>
+        <div class="trust-card fade-in">
+          <div class="trust-card-icon"><i class="fas fa-clipboard-check"></i></div>
+          <h3>Strict Quality Control</h3>
+          <p>Every roof undergoes a 25-point final inspection before we consider the job complete. Your satisfaction is our metric.</p>
+        </div>
+      </div>
+
+      <div class="trust-promises">
+        <div class="trust-promise fade-in">
+          <i class="fas fa-coins"></i>
+          <div>
+            <h4>We Don't Take Deposits Before Work Begins</h4>
+            <p>You pay only when you're completely satisfied with the work.</p>
+          </div>
+        </div>
+        <div class="trust-promise fade-in">
+          <i class="fas fa-file-invoice-dollar"></i>
+          <div>
+            <h4>Clear, Itemized Invoices Every Time</h4>
+            <p>No surprises, no hidden fees. Every line item explained upfront.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <h2 class="section-title fade-in">Our Services</h2>
+      <p class="section-subtitle fade-in">Professional roofing solutions tailored to Alabama's unique climate and your specific needs.</p>
+
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fas fa-tools"></i></div>
+          <h3>Roof Repair</h3>
+          <p>Fast, reliable repairs that extend your roof's life. We fix leaks, replace shingles, and address storm damage before it worsens.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fas fa-home"></i></div>
+          <h3>Roof Installation</h3>
+          <p>Professional installation with premium materials. We build roofs that last 25+ years and come with comprehensive warranties.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fas fa-cloud-bolt"></i></div>
+          <h3>Storm & Hail Damage Repair</h3>
+          <p>Expert damage assessment and restoration. We work directly with your insurance company to restore your roof properly.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+          <h3>Roof Inspections</h3>
+          <p>Thorough inspections with detailed reports. We identify issues early, potentially saving you thousands in future repairs.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fas fa-file-shield"></i></div>
+          <h3>Insurance Claim Assistance</h3>
+          <p>We help navigate your claim process from documentation to settlement. We fight for the coverage you deserve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section why-section" id="why-us">
+    <div class="container">
+      <h2 class="section-title fade-in">Why Choose My Affordable Roof</h2>
+      <p class="section-subtitle fade-in">Six reasons Alabama homeowners trust us with their roofs.</p>
+
+      <div class="why-grid">
+        <div class="why-card fade-in">
+          <div class="why-card-icon"><i class="fas fa-dollar-sign"></i></div>
+          <div>
+            <h4>Transparent Pricing</h4>
+            <p>Detailed quotes before we start. No surprises on your final bill.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-card-icon"><i class="fas fa-eye-slash"></i></div>
+          <div>
+            <h4>No Hidden Fees</h4>
+            <p>Every cost disclosed upfront. We honor our initial quote.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-card-icon"><i class="fas fa-rocket"></i></div>
+          <div>
+            <h4>Fast Response Time</h4>
+            <p>Same-day estimates. Most installations within 5 business days.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <h4>Skilled & Certified Team</h4>
+            <p>Factory-trained craftsmen with 10+ years of experience.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-card-icon"><i class="fas fa-pen-ruler"></i></div>
+          <div>
+            <h4>Written Agreements Only</h4>
+            <p>Every detail documented. Clear expectations on both sides.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-card-icon"><i class="fas fa-mobile-screen"></i></div>
+          <div>
+            <h4>Real-Time Project Updates</h4>
+            <p>Photo updates at each milestone. You stay informed throughout.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="section social-section" id="reviews">
+    <div class="container">
+      <h2 class="section-title fade-in">What Our Customers Are Saying</h2>
+      <p class="section-subtitle fade-in">Real reviews from Alabama homeowners who chose us.</p>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-quote">"They showed up exactly when they said they would. The crew was professional, cleaned up every day, and the roof looks incredible. Best roofing experience I've had in 20 years of homeownership."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div>
+              <div class="testimonial-name">Michael R.</div>
+              <div class="testimonial-location">Birmingham, AL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-quote">"After the storm damage, I was worried about dealing with insurance. They handled everything — the claim, the negotiations, all of it. I didn't pay a single extra dollar than what my insurance covered."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SJ</div>
+            <div>
+              <div class="testimonial-name">Sarah J.</div>
+              <div class="testimonial-location">Huntsville, AL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-stroke"></i>
+          </div>
+          <p class="testimonial-quote">"The before and after speaks for itself. They gave me a detailed quote, stuck to it, and the work was done in two days. Communication was excellent throughout. Highly recommend."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">DW</div>
+            <div>
+              <div class="testimonial-name">David W.</div>
+              <div class="testimonial-location">Mobile, AL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-disclaimer fade-in">
+        <p><i class="fas fa-heart"></i> We are committed to improving and value all customer feedback. Every review helps us become better.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process-section" id="process">
+    <div class="container">
+      <h2 class="section-title fade-in">Our Simple 4-Step Process</h2>
+      <p class="section-subtitle fade-in">From first call to final walkthrough, we make roofing stress-free.</p>
+
+      <div class="process-steps">
+        <div class="process-step fade-in">
+          <div class="process-step-number">1</div>
+          <h4>Free Inspection</h4>
+          <p>We assess your roof thoroughly and provide a detailed condition report at no cost.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-step-number">2</div>
+          <h4>Clear Estimate</h4>
+          <p>Receive a detailed, itemized quote with no obligations. No pressure tactics.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-step-number">3</div>
+          <h4>Professional Installation</h4>
+          <p>Our certified crew completes your roof with precision, using premium materials.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-step-number">4</div>
+          <h4>Final Walkthrough</h4>
+          <p>We inspect together, ensure your complete satisfaction, and explain your warranty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE -->
+  <section class="section guarantee-section" id="guarantee">
+    <div class="container">
+      <h2 class="section-title fade-in">Our Guarantees</h2>
+      <p class="section-subtitle fade-in">We stand behind every roof we install with ironclad commitments.</p>
+
+      <div class="guarantee-grid">
+        <div class="guarantee-card fade-in">
+          <div class="guarantee-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>Workmanship Guarantee</h3>
+          <p>5-year workmanship warranty on all installations. We fix any installation issues at no cost.</p>
+        </div>
+        <div class="guarantee-card fade-in">
+          <div class="guarantee-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+          <h3>No Payment Until Work Begins</h3>
+          <p>We never ask for a deposit. You pay only when the work is complete and you're satisfied.</p>
+        </div>
+        <div class="guarantee-card fade-in">
+          <div class="guarantee-icon"><i class="fas fa-file-contract"></i></div>
+          <h3>Detailed Contracts</h3>
+          <p>Every agreement is written with clear specifications. No verbal promises, no surprises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE/AFTER -->
+  <section class="section beforeafter-section" id="gallery">
+    <div class="container">
+      <h2 class="section-title fade-in">Our Work</h2>
+      <p class="section-subtitle fade-in">See the difference professional roofing makes.</p>
+
+      <div class="beforeafter-container fade-in">
+        <div class="beforeafter-slider">
+          <div class="beforeafter-images">
+            <div class="beforeafter-image before">
+              <span>Before</span>
+              <p style="color: rgba(255,255,255,0.3); text-align: center;">Aged roof with storm damage</p>
+            </div>
+            <div class="beforeafter-image after">
+              <span>After</span>
+              <p style="color: rgba(255,255,255,0.3); text-align: center;">Brand new architectural shingle roof</p>
+            </div>
+            <div class="beforeafter-divider" id="divider"></div>
+            <input type="range" class="beforeafter-input" id="slider" min="0" max="100" value="50">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+      <p class="section-subtitle fade-in">Answers to common questions about our roofing services.</p>
+
+      <div class="faq-list">
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            Do you require a deposit?
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              No. We never require a deposit. You pay only when the work is complete and you've inspected and approved the final result. This is part of our commitment to earning your trust.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            How long does a typical roof installation take?
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Most residential roof installations are completed in 1-3 days. The timeline depends on the size of your roof and weather conditions. We provide a detailed schedule during the estimate phase and keep you updated throughout the project.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            Do you help with insurance claims?
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes. We have extensive experience working with insurance companies. We help document the damage, prepare the claim package, meet with adjusters, and ensure you receive every dollar you're entitled to under your policy.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            What areas do you serve?
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We serve the entire state of Alabama, including Birmingham, Huntsville, Mobile, Tuscaloosa, Montgomery, and all surrounding communities. Contact us to confirm service in your specific area.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            What if I'm not satisfied with the work?
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Your satisfaction is our #1 priority. If you're not completely satisfied with any aspect of our work, we will address it immediately. We offer a 5-year workmanship warranty and have a dedicated customer service team to handle any concerns promptly.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section" id="contact">
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-text fade-in">
+          <h2>Don't Risk Your Roof — Work With a Team That Shows Up</h2>
+          <p>Get your free inspection today. No obligation, no pressure. Just honest roofing expertise.</p>
+          <div class="cta-phone">
+            <i class="fas fa-phone-volume"></i>
+            +1 (918) 892-3358
+          </div>
+        </div>
+
+        <div class="cta-form fade-in">
+          <h3>Request Free Inspection</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="inspection">Free Roof Inspection</option>
+                <option value="repair">Roof Repair</option>
+                <option value="installation">Roof Installation</option>
+                <option value="storm">Storm/Hail Damage</option>
+                <option value="insurance">Insurance Claim</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" placeholder="Tell us about your roofing needs..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-large form-submit">
+              <i class="fas fa-paper-plane"></i>
+              Get Free Inspection
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-house-chimney"></i>
+            </div>
+            <div class="logo-text">
+              My Affordable Roof
+              <span>Alabama</span>
+            </div>
+          </a>
+          <p>Roofing you can finally trust. Serving Alabama with integrity, transparency, and expert craftsmanship since 2010.</p>
+          <div class="footer-badges">
+            <div class="footer-badge"><i class="fas fa-certificate"></i> Licensed</div>
+            <div class="footer-badge"><i class="fas fa-shield-halved"></i> Insured</div>
+            <div class="footer-badge"><i class="fas fa-star"></i> Guaranteed</div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Roof Repair</a></li>
+            <li><a href="#services">Roof Installation</a></li>
+            <li><a href="#services">Storm Damage</a></li>
+            <li><a href="#services">Inspections</a></li>
+            <li><a href="#services">Insurance Claims</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-phone"></i> +1 (918) 892-3358</p>
+          <p><i class="fas fa-map-marker-alt"></i> Serving All of Alabama</p>
+          <p><i class="fas fa-clock"></i> Mon-Fri: 7am - 6pm</p>
+          <p><i class="fas fa-clock"></i> Sat: 8am - 2pm</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 My Affordable Roof – Alabama. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING CTA -->
+  <div class="floating-cta">
+    <a href="tel:+19188923358" class="floating-btn phone" aria-label="Call us">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    });
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Fade-in on scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    fadeElements.forEach(el => observer.observe(el));
+
+    // Before/After slider
+    const slider = document.getElementById('slider');
+    const divider = document.getElementById('divider');
+    const beforeImage = document.querySelector('.beforeafter-image.before');
+
+    slider.addEventListener('input', (e) => {
+      const value = e.target.value;
+      divider.style.left = value + '%';
+      beforeImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const wasActive = item.classList.contains('active');
+
+        document.querySelectorAll('.faq-item').forEach(faq => {
+          faq.classList.remove('active');
+        });
+
+        if (!wasActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    // Form submission
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      alert(`Thank you, ${name}! We've received your request and will contact you within 2 hours during business hours.`);
+      form.reset();
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const headerHeight = header.offsetHeight;
+          const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
