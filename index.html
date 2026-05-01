@@ -244,6 +244,10 @@
       position: relative;
       overflow: hidden;
       padding-top: 80px;
+      background-image: linear-gradient(rgba(10,22,40,0.65), rgba(10,22,40,0.65)), url('public/images/maha.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     .hero::before {
@@ -1716,15 +1720,15 @@
         <div class="beforeafter-slider">
           <div class="beforeafter-images">
             <div class="beforeafter-image before">
+              <img src="public/images/before.jpeg" alt="Before: Aged roof with storm damage" style="width:100%; height:auto; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.18); object-fit: cover;" loading="lazy" />
               <span>Before</span>
-              <p style="color: rgba(255,255,255,0.3); text-align: center;">Aged roof with storm damage</p>
             </div>
             <div class="beforeafter-image after">
+              <img src="public/images/after.jpeg" alt="After: Brand new architectural shingle roof" style="width:100%; height:auto; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.18); object-fit: cover;" loading="lazy" />
               <span>After</span>
-              <p style="color: rgba(255,255,255,0.3); text-align: center;">Brand new architectural shingle roof</p>
             </div>
             <div class="beforeafter-divider" id="divider"></div>
-            <input type="range" class="beforeafter-input" id="slider" min="0" max="100" value="50">
+            <input type="range" class="beforeafter-input" id="slider" min="0" max="100" value="50" aria-label="Before and After Slider">
           </div>
         </div>
       </div>
